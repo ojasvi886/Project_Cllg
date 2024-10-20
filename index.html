@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Event<span>Master</span></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#loginModal" class="login-btn" id="loginBtn">Login</a> <!-- Login Button -->
+            <a href="#registerModal" class="register-btn" id="registerBtn">Register</a> <!-- Register Button -->
+        </nav>
+        <div class="menu-icon">&#9776;</div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="content">
+            <h1>Making Your <span>Event</span> Memorable</h1>
+            <p>We offer exceptional event planning services for all your needs. From weddings to corporate events, we ensure every detail is taken care of.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="service-grid">
+            <div class="service-box">
+                <img src="wed.jpg" alt="Weddings">
+                <h3>Weddings</h3>
+                <p>We design and manage luxury weddings tailored to your dreams.</p>
+            </div>
+            <div class="service-box">
+                <img src="corpor.jpeg" alt="Corporate Events">
+                <h3>Corporate Events</h3>
+                <p>Professional event solutions for all your business needs.</p>
+            </div>
+            <div class="service-box">
+                <img src="birth.jpeg" alt="Birthday Parties">
+                <h3>Birthday Parties</h3>
+                <p>Make birthdays unforgettable with our custom event planning.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatroom Section -->
+    <section id="chatroom" class="chatroom-section">
+        <div class="chat-container">
+            <h3>Consumer-Retailer Chat</h3>
+            <div class="chat-box">
+                <div class="messages" id="chatMessages">
+                    <!-- Chat messages will be displayed here -->
+                </div>
+                <div class="message-input">
+                    <input type="text" id="messageInput" placeholder="Type your message...">
+                    <button id="sendMessageBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="heading">Get <span>In Touch</span></h2>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="email" placeholder="Email" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegisterModal">&times;</span>
+            <h2>Register</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required><br>
+                <input type="email" placeholder="Email" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <input type="password" placeholder="Confirm Password" required><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EventMaster. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
